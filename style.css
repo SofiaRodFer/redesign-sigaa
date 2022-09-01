@@ -56,8 +56,12 @@ header .right h3 {
     padding-right: 15px;
 }
 
+.container {
+    display: flex;
+}
+
 nav {
-    width: 270px;
+    width: 430px;
     height: calc(100vh - 100px);
     background-color: var(--secondary-color);
     display: flex;
@@ -72,13 +76,77 @@ nav .opcao {
     width: 85%;
     margin-top: 30px;
     margin-bottom: 30px;
-    transition: all 2s;
 }
 
 nav .opcao p {
     font-family: var(--main-font);
     font-weight: 700;
-    font-size: 22px;
+    font-size: 19px;
     color: white;
 }
 
+main {
+    display: flex;
+    flex-direction: column;
+    padding: 40px 120px 20px 70px;
+}
+
+main h3 {
+    font-family: var(--main-font);
+    font-weight: 700;
+    font-size: 22px;
+    color: #303030;
+    padding-bottom: 20px;
+    margin-left: 30px;
+}
+
+main .turmas {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+main .turmas .turma {
+    width: 330px;
+    height: 230px;
+    border-radius: 10px;
+    box-shadow: 4px 4px 9px 4px rgba(0, 0, 0, 0.1);
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+    transition: all .2s;
+}
+
+main .turmas .turma h2 {
+    font-family: var(--main-font);
+    font-weight: 700;
+    font-size: 30px;
+    color: #303030;
+    margin: 25px 19px 0 19px;
+    transition: all .2s;
+}
+
+main .turmas .turma .detalhes {
+    margin: 0px 0px 25px 20px
+}
+
+main .turmas .turma .detalhes p {
+    font-family: var(--main-font);
+    font-weight: 700;
+    font-size: 20px;
+    color: #565656;
+    margin-bottom: 5px;
+    transition: all .2s;
+}
+
+main .turmas .turma:hover {
+    background-color: var(--main-color);
+}
+
+main .turmas .turma:hover h2, main .turmas .turma:hover .detalhes p {
+    color: white;
+}
