@@ -54,6 +54,7 @@ header .right h3 {
     font-size: 20px;
     color: white;
     padding-right: 15px;
+    padding-left: 5px;
 }
 
 .container {
@@ -149,4 +150,23 @@ main .turmas .turma:hover {
 
 main .turmas .turma:hover h2, main .turmas .turma:hover .detalhes p {
     color: white;
+}
+
+main .anteriores {
+    display: flex;
+    align-items: center;
+    margin: 35px 0 0 20px;
+}
+
+main .anteriores p {
+    font-family: var(--main-font);
+    font-weight: 700;
+    font-size: 22;
+    color: #519CD6;
+    cursor: pointer;
+    transition: all .2s;
+}
+
+main .anteriores p:hover {
+    color: var(--main-color);
 }
