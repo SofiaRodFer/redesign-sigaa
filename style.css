@@ -1,0 +1,63 @@
+/* Import Roboto - regular, medium, bold */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+/* Import Poppins - regular, medium, bold */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+
+:root {
+    --main-color: #004470;
+    --secondary-color: #002D4F;
+    --main-font: 'Roboto', sans-serif;
+    --secondary-font: 'Poppins', sans-serif;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--main-color);
+    padding: 15px 25px;
+    box-shadow: 0 8px 8px rgba(0, 0, 0, 0.1);
+}
+
+.left, .right {
+    display: flex;
+    align-items: center;
+}
+
+header .left h1 {
+    font-family: var(--secondary-font);
+    font-weight: 500;
+    font-size: 70px;
+    color: white;
+}
+
+header .left h2 {
+    font-family: var(--secondary-font);
+    font-weight: 400;
+    font-size: 16;
+    color: white;
+    width: 190px;
+    line-height: 1.4;
+    padding-left: 15px;
+}
+
+header .right img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+
+header .right h3 {
+    font-family: var(--main-font);
+    font-weight: 500;
+    font-size: 20px;
+    color: white;
+    padding-right: 15px;
+}
+
+nav {
+    width: 270px;
+    height: calc(100vh - 100px);
+    background-color: var(--secondary-color);
+}
